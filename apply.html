@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply</title>
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/msg.css">
+    <link rel="stylesheet" href="./css/apply.css">
 </head>
 
 <body>
@@ -54,57 +54,46 @@
         </div>
     </div>
 
-    <!-- 플로팅 버튼 -->
-    <div class="floating" onclick="goToPage()">
-        <img src="./image/logo.svg" alt="logo" class="floating-logo">
-        <p>지원하러 가기</p>
-    </div>
-
     <!-- 메인 화면 -->
-    <main class="main">
-        <div class="content-banner">
-            <img src="/image/msg/content-banner.svg" alt="content-banner" class="banner-img">
-        </div>
-        <div class="content-about">
-            <img src="./image/msg/deco-arrow.svg" alt="arrow" class="arrow">
-            <div class="content-slogan">
-                <h3>WHO ARE WE ?</h3>
-                <h1>WE ARE</h1>
-                <img src="./image/msg/logo-deco.svg" alt="logo" class="logo-deco">
-                <h3>WHAT IS MSG ?</h3>
-                <img src="./image/msg/content-slogan.svg" alt="slogan" class="slogan">
-            </div>
-            <div class="content-desc">
-                <h2>성장 의지를 가진 사람들이 모여<br>만들어내는 시너지의 힘을 느껴보세요.</h2>
-                <p>온전히 나와 팀의 성장을 위해 노력해본 경험이 있나요?<br>
-                    MSG는 열정적인 프로젝트 활동을 통해 서로를 독려하며<br>
-                    성장과 변화를 만들어가는 동아리입니다.</p>
-            </div>
-            <div class="content-passion">
-                <h2>숫자가 증명하는 MSG의 열정</h2>
-                <div class="group">
-                    <div class="circle">
-                        <p class="sub-title">운영기간</p>
-                        <div class="title">
-                            <span class="num counting" id="years">0</span>년
-                        </div>
-                    </div>
-                    <div class="circle">
-                        <p class="sub-title">2024년 모임 횟수</p>
-                        <div class="title">
-                            <span class="num counting" id="meetings">0</span>일
-                        </div>
-                    </div>
-                    <div class="circle">
-                        <p class="sub-title">누적 개발 블로그</p>
-                        <div class="title">
-                            <span class="num counting" id="blogs">0</span>+
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <div class="form-container" style="margin-left: 215px;">
+        <p style="color: #1BF48B; margin-right: 480px;">MSG 지원 페이지</p>
+        <h1 style="font-size: 64px; font-weight: 600;">MSG 16기 지원하기</h1>
+        <p>당신은 어떤 사람인가요?</p>
+        <p>MSG 부원이 되어야 하는 이유를 어필해주세요!<br>여러분의 소중한 답변을 기다리겠습니다. :)</p>
+        <p></p>
+        <p>*은 필수 입력사항입니다. </p>
+
+        <form>
+            <label for="student-id">학번 *</label>
+            <input type="text" id="student-id" name="student-id" placeholder="ex. 1100">
+
+            <label for="name">이름 *</label>
+            <input type="text" id="name" name="name" placeholder="ex. 김미림">
+
+            <label for="phone">전화번호 *</label>
+            <input type="text" id="phone" name="phone" placeholder="ex. 01012345678">
+
+            <label for="email">학교이메일 *</label>
+            <input type="email" id="email" name="email" placeholder="ex. s2501@e-mirim.hs.kr">
+
+            <label for="reason">MSG 지원 동기 *</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="strength">나를 정의할 수 있는 한 마디 *</label>
+            <textarea id="strength" name="strength" rows="4" placeholder="20자 이내로 작성해주세요."></textarea>
+
+            <label for="self-introduction">자신의 강점과 단점 *</label>
+            <textarea id="self-introduction" name="self-introduction" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="experience">실제 경험과 극복 사례 *</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="expectation">MSG에게 궁금한 점</label>
+            <input type="text" id="expectation" name="expectation" placeholder="편하게 물어봐주세요 :)">
+
+            <input type="submit" value="제출하기">
+        </form>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -135,7 +124,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/msg.js"></script>
 </body>
 
 </html>
